@@ -1,0 +1,18 @@
+<h1> Añade un nuevo teléfono </h1>
+<a [routerLink]="['']"> Vuelve a la lista</a>
+
+<form>
+    <label> Marca </label>
+    <input type="text" [(ngModel)]="newPhone.brand" name="brand" required />
+
+    <label> Modelo </label>
+    <input type="text" [(ngModel)]="newPhone.name" name="name" required />
+
+    <label> Características  </label>
+    <input type="text" [(ngModel)]="newPhone.specs" name="specs" />
+
+    <label>Imagen</label>
+    <input type="text" [(ngModel)]="newPhone.image" name="image" />
+
+  <button (click)="submit()"> Guardar </button>
+</form>

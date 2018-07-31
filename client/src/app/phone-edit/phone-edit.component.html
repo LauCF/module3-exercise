@@ -1,0 +1,17 @@
+<h1> Edita teléfono </h1>
+<a [routerLink]="['']"> Vuelve a la lista</a>
+<form *ngIf="phone">
+    <label> Marca </label>
+    <input type="text" [(ngModel)]="phone.brand" name="brand"  required />
+
+    <label> Modelo </label>
+    <input type="text" [(ngModel)]="phone.name" name="name"  required />
+
+    <label> Características  </label>
+    <input type="text" [(ngModel)]="phone.specs" name="specs"   />
+
+    <label>Imagen</label>
+    <input type="text" [(ngModel)]="phone.image" name="image"  />
+
+  <button (click)="submit()"> Editar </button>
+</form>
